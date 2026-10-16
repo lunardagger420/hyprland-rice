@@ -4,11 +4,17 @@
   "margin-left": 10,
   "margin-right": 10,
 
-  "modules-left": ["hyprland/workspaces", "group/media"],
+  "modules-left": ["group/left-modules"],
   "modules-center": ["clock"],
-  "modules-right": [
-    "group/right-status"
-  ],
+  "modules-right": ["group/right-status"],
+
+  "group/left-modules": {
+      "orientation": "horizontal",
+      "modules": [
+        "hyprland/workspaces",
+        "group/media"
+      ]
+    },
 
   // Group all right modules into one continuous island
   "group/right-status": {
@@ -23,7 +29,6 @@
       "memory"
     ]
   },
-
   "hyprland/window": {
     "max-length": 50
   },
