@@ -12,17 +12,13 @@
       "orientation": "horizontal",
       "modules": [
         "hyprland/workspaces",
-        "group/media"
       ]
     },
-
-  // Group all right modules into one continuous island
   "group/right-status": {
     "orientation": "horizontal",
     "modules": [
       "hyprland/submap",
       "group/volume",
-      "battery",
       "bluetooth",
       "network",
       "cpu",
@@ -31,18 +27,6 @@
   },
   "hyprland/window": {
     "max-length": 50
-  },
-  "battery": {
-    "interval": 60,
-    "format": "{capacity}% {icon}",
-    "format-icons": {
-      "default": [
-        "󰂎", "󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"
-      ],
-      "charging": [
-        "󰢟", "󰢜", "󰂆", "󰂇", "󰂈", "󰢝", "󰂉", "󰢞", "󰂊", "󰂋", "󰂅"
-      ]
-    }
   },
   "bluetooth": {
     "format": "",
@@ -83,7 +67,7 @@
 	"max-length": 25
   },
   "pulseaudio": {
-    "format": "{volume}% {icon}",
+    "format": "{icon} {volume}%",
     "format-muted": "",
     "format-icons": {
       "default": ["", ""]
@@ -99,32 +83,6 @@
   },
   "group/volume": {
     "orientation": "horizontal",
-    "modules": ["pulseaudio", "pulseaudio/slider"]
-  },
-  "group/media": {
-    "orientation": "horizontal",
-    "modules": [
-      "custom/media-animation",
-      "custom/media-now-playing",
-      "custom/media-time"
-    ]
-  },
-  "custom/media-now-playing": {
-    "exec": "~/.config/waybar/custom_modules/media/media-now-playing.sh",
-    "escape": true,
-    "tooltip": false,
-    "on-click": "playerctl play-pause",
-    "on-click-middle": "playerctl previous",
-    "on-click-right": "playerctl next"
-  },
-  "custom/media-animation": {
-    "exec": "~/.config/waybar/custom_modules/media/media-animation.sh",
-    "tooltip": false
-  },
-  "custom/media-time": {
-    "exec": "~/.config/waybar/custom_modules/media/media-time.sh",
-    "escape": true,
-    "interval": 1,
-    "tooltip": false
+    "modules": ["pulseaudio", ""]
   }
 }
