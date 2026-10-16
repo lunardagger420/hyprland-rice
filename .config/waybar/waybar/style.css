@@ -1,0 +1,118 @@
+@import "colors/colors-matugen.css";
+
+* {
+  font-family: JetBrainsMono Nerd Font Propo;
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
+}
+
+window#waybar {
+  background-color: transparent;
+  color: #ffffff;
+  transition-property: background-color;
+  transition-duration: 0.5s;
+  border-radius: 0px;
+  min-height: 30px;
+}
+
+window#waybar.hidden {
+  opacity: 0.2;
+}
+
+#left-modules {
+  background-color: @dark-9;
+  border-radius: 12px;
+  padding: 0px 4px;
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+
+#clock {
+  background-color: @dark-9;
+  border-radius: 12px;
+  padding: 0px 8px;
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+
+#workspaces {
+  background: transparent;
+  margin: 0px 2px;
+}
+
+#workspaces button {
+  padding: 0px 8px;
+  margin: 4px -2px 4px -2px;
+  background: transparent;
+  border-radius: 8px;
+  color: white;
+  border: none;
+}
+
+#workspaces button.active {
+  background: @highlight;
+  color: black;
+  font-weight: 700;
+}
+
+#workspaces button.urgent {
+  background: rgba(227, 81, 73, 1);
+  color: black;
+}
+
+#submap,
+#battery,
+#bluetooth,
+#network,
+#cpu,
+#memory,
+#volume {
+  border-radius: 8px;
+  padding: 0px 8px;
+  margin-top: 4px;
+  margin-bottom: 4px;
+  margin-left: 0px;
+  margin-right: 4px;
+  background: @dark-9;
+  color: white;
+}
+
+#submap {
+  background: rgba(227, 81, 73, 1);
+  color: black;
+}
+
+#pulseaudio-slider {
+  padding: 0px 0px;
+  margin: 4px 4px;
+}
+
+#pulseaudio-slider slider {
+  all: unset;
+  min-height: 0;
+  min-width: 0;
+  opacity: 0;
+}
+
+#pulseaudio-slider trough {
+  min-height: 6px;
+  min-width: 60px;
+  border-radius: 3px;
+  background: @dark-7;
+}
+
+#pulseaudio-slider highlight {
+  min-width: 6px;
+  border-radius: 3px;
+  background: @highlight;
+}
+
+tooltip {
+  background: @dark-9;
+  border-radius: 8px;
+}
+
+tooltip label {
+  color: white;
+}
