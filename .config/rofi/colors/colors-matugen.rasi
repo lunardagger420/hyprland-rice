@@ -1,0 +1,29 @@
+/**
+ * Matugen Dynamic Palette for Rofi
+ **/
+
+* {
+    /* Background scale (from circled code) */
+    bg0:    #0e0e13FF;
+    bg1:    #1b1b21FF;
+    bg2:    #1f1f25FF;
+    bg3:    #2a292fFF;
+    bg4:    #35343aFF;
+
+    /* Foreground / Text (from circled code) */
+    fg:     #e4e1e9FF;
+
+    /* Color Accents (from circled code) */
+    red:    #ffb4abFF;
+    orange: #e9b9d3FF;
+    yellow: #c6c4ddFF;
+    green:  #c1c1ffFF;
+    aqua:   #404178FF;
+    blue:   #454559FF;
+    purple: #5f3c51FF;
+
+    /* Grey scale (from circled code) */
+    grey0:  #918f9aFF;
+    grey1:  #47464fFF;
+    grey2:  #47464fFF;
+}

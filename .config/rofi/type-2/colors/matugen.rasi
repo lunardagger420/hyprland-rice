@@ -1,0 +1,16 @@
+/**
+ *
+ * Author : Aditya Shakya (adi1090x)
+ * Github : @adi1090x
+ *
+ * Colors
+ **/
+@import "colors/colors-matugen.rasi"
+* {
+    background:     var(bg0);
+    background-alt: var(bg1);
+    foreground:     var(fg);
+    selected:       var(blue);
+    active:         var(aqua);
+    urgent:         var(red);
+}

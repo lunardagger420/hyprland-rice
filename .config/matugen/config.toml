@@ -1,0 +1,28 @@
+[config]
+source_color_index = 0
+
+[templates.waybar]
+input_path = '~/.config/matugen/templates/waybar.css'
+output_path = '~/.config/waybar/colors/colors-matugen.css'
+post_hook = 'killall -SIGUSR2 waybar'
+
+[templates.rofi]
+input_path = '~/.config/matugen/templates/rofi-colors.rasi'
+output_path = '~/.config/rofi/type-2/colors/colors-matugen.rasi'
+
+[templates.hyprland]
+input_path = '~/.config/matugen/templates/hyprland-colors.lua'
+output_path = '~/.config/hypr/colors/matugen.lua'
+
+[templates.swaync]
+input_path = '~/.config/matugen/templates/swaync-colors.css'
+output_path = '~/.config/swaync/colors/matugen.css'
+
+[templates.hyprlock]
+input_path = '~/.config/matugen/templates/colors.conf'
+output_path = '~/.config/hypr/colors.conf'
+
+[templates.kitty]
+input_path = '~/.config/matugen/templates/kitty-theme.conf'
+output_path = '~/.config/kitty/colors/kitty-theme.conf'
+post_hook = 'pkill -USR1 kitty'
