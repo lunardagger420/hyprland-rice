@@ -1,0 +1,6 @@
+@define-color highlight {{colors.primary.default.hex}};
+@define-color dark-9 {{colors.surface_container_lowest.default.hex}};
+@define-color dark-8 {{colors.surface_container_low.default.hex}};
+@define-color dark-7 {{colors.surface_container.default.hex}};
+@define-color dark-6 {{colors.surface_container_high.default.hex}};
+@define-color dark-5 {{colors.surface_container_highest.default.hex}};
